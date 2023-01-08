@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"path": "hr-worker"
+	},
+	{
+		"name": "hr-payroll",
+		"path": "hr-payroll"
+	}
+],
+  "settings": {
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic"
+  }
+}
