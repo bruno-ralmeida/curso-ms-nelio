@@ -1,4 +1,4 @@
-package br.com.xxnbr.hrpayroll.Controllers;
+package br.com.xxnbr.hrpayroll.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
