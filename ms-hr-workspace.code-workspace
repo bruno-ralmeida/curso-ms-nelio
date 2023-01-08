@@ -1,13 +1,17 @@
 {
   "folders": [
-	{
-		"path": "hr-worker"
-	},
-	{
-		"name": "hr-payroll",
-		"path": "hr-payroll"
-	}
-],
+    {
+      "path": "hr-worker"
+    },
+    {
+      "name": "hr-payroll",
+      "path": "hr-payroll"
+    },
+    {
+      "name": "hr-eureka-server",
+      "path": "hr-eureka-server"
+    }
+  ],
   "settings": {
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.compile.nullAnalysis.mode": "automatic"
