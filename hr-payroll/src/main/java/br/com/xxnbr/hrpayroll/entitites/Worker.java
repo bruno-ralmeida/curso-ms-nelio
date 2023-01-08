@@ -14,13 +14,10 @@ import lombok.Setter;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Payment implements Serializable {
+public class Worker implements Serializable {
 
+  private Long id;
   private String name;
   private BigDecimal dailyIncome;
-  private Integer days;
 
-  public BigDecimal getTotal() {
-    return dailyIncome.multiply(BigDecimal.valueOf(days));
-  }
 }
