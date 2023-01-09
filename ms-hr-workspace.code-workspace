@@ -15,6 +15,10 @@
     {
       "name": "hr-api-gateway-zuul",
       "path": "hr-api-gateway-zuul"
+    },
+    {
+      "name": "hr-config-server",
+      "path": "hr-config-server"
     }
   ],
   "settings": {
