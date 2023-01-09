@@ -19,6 +19,10 @@
     {
       "name": "hr-config-server",
       "path": "hr-config-server"
+    },
+    {
+      "name": "hr-user",
+      "path": "hr-user"
     }
   ],
   "settings": {
