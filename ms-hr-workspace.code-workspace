@@ -1,6 +1,7 @@
 {
   "folders": [
     {
+      "name": "hr-worker",
       "path": "hr-worker"
     },
     {
@@ -14,6 +15,8 @@
   ],
   "settings": {
     "java.configuration.updateBuildConfiguration": "automatic",
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.dependency.syncWithFolderExplorer": true
   }
 }
