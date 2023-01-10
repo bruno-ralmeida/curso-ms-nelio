@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.xxnbr.hruser.entities.User;
@@ -20,6 +21,16 @@ public class UserController {
   @GetMapping(value = "/{id}")
   public ResponseEntity<User> findById(@PathVariable Long id) {
     var response = repository.findById(id);
+
+    if (response.isEmpty())
+      return ResponseEntity.notFound().build();
+
+    return ResponseEntity.ok(response.get());
+  }
+
+  @GetMapping(value = "/search")
+  public ResponseEntity<User> findById(@RequestParam String email) {
+    var response = repository.findByEmail(email);
 
     if (response.isEmpty())
       return ResponseEntity.notFound().build();
