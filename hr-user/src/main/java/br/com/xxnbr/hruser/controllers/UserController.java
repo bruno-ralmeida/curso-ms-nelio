@@ -29,7 +29,7 @@ public class UserController {
   }
 
   @GetMapping(value = "/search")
-  public ResponseEntity<User> findById(@RequestParam String email) {
+  public ResponseEntity<User> findByEmail(@RequestParam String email) {
     var response = repository.findByEmail(email);
 
     if (response.isEmpty())
